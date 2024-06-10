@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nong1</title>
+</head>
+<body>
+    <div class="Myname">
+        <h1>
+            김욱일
+        </h1>
+        <h3>
+            ukill kim
+        </h3>
+    </div>
+    <div class="Cards">
+        <div class="Name">
+            <p>
+                Dev
+            </p>
+            <div class="Card">
+                <p>
+                    Unity
+                </p>
+                <p>
+                    Web3
+                </p>
+                <p>
+                    Flutter
+                </p>
+                <p>
+                    Python
+                </p>
+                <p>
+                    C#
+                </p>
+                <p>
+                    Java
+                </p>
+            </div>
+        </div>
+
+        <div class="Name">
+            <p>
+                Design
+            </p>
+            <div class="Card">
+                <p>
+                    Figma
+                </p>
+                <p>
+                    Lightroom
+                </p>
+                <p>
+                    Photoshop
+                </p>
+                <p>
+                    Illustrator
+                </p>
+                <p>
+                    Xd
+                </p>
+                <p>
+                    Finalcut
+                </p>
+            </div>
+        </div>
+
+        <div class="Name">
+            <p>
+                Photography
+            </p>
+            <div class="Card">
+                <p>
+                    Portrait
+                </p>
+                <p>
+                    Product photo
+                </p>
+                <p>
+                    Group photo
+                </p>
+                <p>
+                    Sports photo
+                </p>
+                <p>
+                    Concert photo
+                </p>
+                <p>
+                    Macro photo
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="Bottom">
+        <img class="dis"src="https://i.namu.wiki/i/1Hiv-mf3x_xkYU1kd6PRSAA9TZycl-A3h-HM--kersQF5fL6_fF2PmO8757fj9CqhXnmcy2lFaQkwToWTxtIHw.webp">
+        <div class="description">discord : nong1</div>
+        <img class="icon" src="https://help.apple.com/assets/63FFD63D71728623E706DB4F/63FFD63E71728623E706DB56/ko_KR/d94aa1c4979b25e9ffbda97fcbae219a.png">
+        <img class="icon" src="https://cdn-icons-png.flaticon.com/256/5968/5968520.png">
+        <img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/1200px-Adobe_Photoshop_Lightroom_CC_logo.svg.png">
+        <img class="icon" src="https://help.apple.com/assets/64FFB258AE78C91D760CB66A/64FFB25D3DC7043983057480/ko_KR/97f5f4dfe6df84d78caacff68ec63538.png">
+    </div>
+</body>
+<style>
+    .Bottom .dis:hover + .description{
+        opacity: 1;
+    }
+    .description {
+        position: absolute;
+        top: -55px;
+        left: -30px;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7); /* 반투명 배경 */
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        border-radius: 100px;
+    }
+    .dis{
+        height: 50px;
+    }
+    .icon{
+        height: 40px;
+        align-self: center;
+    }
+    body{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;            
+        overflow: hidden;
+    }
+    img{
+        height: 50px;
+        margin-left:5px;
+        margin-right: 5px;
+    }
+    .Bottom{
+        background: rgba(87, 87, 87, 0.25);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 15px;
+        border: 0.2px, solid rgb(159, 159, 159);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 275px;
+    }
+    .Name>p{
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .Card>p{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    p{
+        color:white;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: white;
+    }
+    .Card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 70px;
+        padding-left: 100px;
+        padding-right: 100px;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba(131, 180, 255, 0);
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 20px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        width: 200px;
+    }
+    .Card:hover{
+        box-shadow: 0 8px 32px 0 rgba(131, 180, 255, 0.9);
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+    }
+    .Cards{
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 60px;
+        width: 100vw;
+        transform: translateY(100%);
+        animation: slideUp 1s ease-out forwards;
+    }
+    .Myname{
+        text-align: center;
+        width: 100vw;
+        font-family: "Noto Sans KR", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 900;
+        font-style: normal;
+        color: white;
+        margin-top: 40px;
+    }
+    body{
+        display: flex;
+        flex-direction: column;
+        background-image: url(https://blog.kakaocdn.net/dn/bryiIS/btq9KvC1kQs/ya4qiJujcNttIyeGCLQXo1/img.jpg);
+        background-size: cover;
+    }
+    @keyframes slideUp {
+        0% {
+            opacity: 0;
+            transform: translateY(100%);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+</style>
+</html>
